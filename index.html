@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="es-BO">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nixaga Petrol S.R.L. es una empresa especializada en la importación y comercialización de combustibles líquidos y asfaltos en Bolivia y la región andina.">
+  <meta name="keywords" content="Combustibles, Diésel ULSD, Gasolinas, Importación de Combustibles, YPFB, Asfaltos, Nixaga Petrol, Bolivia, Petroperu">
+  <meta name="author" content="Nixaga Petrol S.R.L.">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Nixaga Petrol S.R.L. - Energía que conecta naciones">
+  <meta property="og:description" content="Especialistas en la importación y comercialización de combustibles líquidos, asegurando abastecimiento eficiente.">
+  <meta property="og:image" content="https://nixagapetrol.com/hero.jpg">
+  <meta property="og:url" content="https://nixagapetrol.com">
+  <meta property="og:type" content="website">
+
+  <title>NIXAGA PETROL SRL - Importación de Combustibles Líquidos</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav id="nav">
+  <div class="nav-row">
+    <a href="#" class="logo">
+      <svg class="logo-svg" viewBox="0 0 46 46" fill="none">
+        <circle cx="23" cy="23" r="21.5" stroke="#155220" stroke-width="1.4"/>
+        <circle cx="23" cy="23" r="18.5" stroke="#28924A" stroke-width=".5" stroke-dasharray="2.5 3.5"/>
+        <circle cx="23" cy="23" r="17" fill="#F8FAF7"/>
+        <path d="M23 6.5C23 6.5,33.5 18.5,33.5 26C33.5 32 28.8 37 23 37C17.2 37 12.5 32 12.5 26C12.5 18.5 23 6.5 23 6.5Z" fill="#155220"/>
+        <path d="M23 10.5C23 10.5,31 20,31 26C31 29.6 28.8 32.8 25.5 34.2" stroke="#3DB85E" stroke-width="1.6" stroke-linecap="round" fill="none" opacity=".6"/>
+        <path d="M23 17.5C23 17.5,28 24,28 27.5C28 30.1 25.8 32.2 23 32.2C20.2 32.2 18 30.1 18 27.5C18 24 23 17.5 23 17.5Z" fill="white" opacity=".18"/>
+        <circle cx="20.2" cy="25" r="2" fill="white" opacity=".28"/>
+        <circle cx="23" cy="6" r="1.5" fill="#28924A"/>
+      </svg>
+      <div class="logo-words">
+        <div class="lw1">NIXAGA <span>PETROL</span></div>
+        <div class="lw2">S.R.L.</div>
+        <div class="lw3">Resolviendo Desafíos</div>
+      </div>
+    </a>
+    <ul class="nav-menu">
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#mercados">Mercados</a></li>
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#contacto" class="nav-cta btn">Contacto</a></li>
+    </ul>
+    <div class="ham" id="ham" onclick="toggleMob()"><span></span><span></span><span></span></div>
+  </div>
+  <div class="nav-stripe"></div>
+  <div class="mob-menu" id="mob">
+    <a href="#servicios" onclick="closeMob()">Servicios</a>
+    <a href="#nosotros" onclick="closeMob()">Nosotros</a>
+    <a href="#mercados" onclick="closeMob()">Mercados</a>
+    <a href="#productos" onclick="closeMob()">Productos</a>
+    <a href="#contacto" onclick="closeMob()" style="color:var(--G);font-weight:700">Contacto</a>
+  </div>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero" id="hero">
+  <div class="cr-track" id="crT">
+    <div class="cr-slide cr-slide-photo"><img src="/hero.jpg" alt="Tanquero — NIXAGA PETROL SRL"></div>
+    <div class="cr-slide cr-slide-photo">
+      <img src="/image_2.jpg" alt="Estación de servicio YPFB — Distribución de combustibles Bolivia">
+      <div class="cr-slide-caption">Estación de Servicio YPFB · Bolivia</div>
+    </div>
+    <div class="cr-slide cr-slide-photo">
+      <img src="/image_3.jpg" alt="Planta de almacenaje YPFB Palmasola — Santa Cruz de la Sierra">
+      <div class="cr-slide-caption">Planta de Almacenaje YPFB · Santa Cruz de la Sierra</div>
+    </div>
+    <div class="cr-slide cr-slide-photo">
+      <img src="/image_4.jpg" alt="Puerto Arica — Despacho de cisternas de combustible">
+      <div class="cr-slide-caption">Puerto Arica · Despacho de Cisternas</div>
+    </div>
+    <div class="cr-slide"><div class="cr-ph"><div class="cr-ph-wm">05</div><div class="cr-ph-body"><div class="cr-ph-ico">🌎</div><div class="cr-ph-t">Operaciones<br>Regionales</div><div class="cr-ph-s">Foto 05 · Próximamente</div></div><div class="cr-ph-bar"></div></div></div>
+  </div>
+  <div class="cr-prev ad" id="cP">&#8592;</div>
+  <div class="cr-next ad" id="cN">&#8594;</div>
+  <div class="hero-copy" id="hC">
+    <div class="h-ey">
+      <span class="h-ey-txt">Comercialización Internacional de Combustibles Líquidos</span>
+    </div>
+    <h1>Energía que<br><em>conecta</em><br>naciones</h1>
+    <p class="h-sub">Nixaga Petrol S.R.L. es una empresa boliviana especializada en la importación y comercialización de combustibles líquidos, con un enfoque técnico-comercial orientado a garantizar soluciones eficientes, seguras y sostenibles para el abastecimiento energético del país.</p>
+    <div class="hero-ctas">
+      <a href="#servicios" class="btn btn-solid">Nuestros Servicios</a>
+      <a href="#contacto" class="btn btn-outline">Contactar</a>
+    </div>
+  </div>
+  <div class="cr-dots" id="crD">
+    <div class="dot dd on" data-i="0"></div><div class="dot dd" data-i="1"></div>
+    <div class="dot dd" data-i="2"></div><div class="dot dd" data-i="3"></div><div class="dot dd" data-i="4"></div>
+  </div>
+  <div class="cr-cap">
+    <div class="cap-dot" id="cDot" style="background:#fff"></div>
+    <span class="cap-txt" id="cTxt" style="color:rgba(255,255,255,.45)">Puerto costero andino — Tanquero en operación</span>
+  </div>
+  <div class="hero-bar"></div>
+</section>
+
+<!-- ═══ TICKER ═══ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span class="ti">Diésel ULSD<span class="ts"></span></span><span class="ti">Gasolinas<span class="ts"></span></span>
+    <span class="ti">Asfaltos<span class="ts"></span></span><span class="ti">Importación y Comercialización<span class="ts"></span></span>
+    <span class="ti">Bolivia · Perú · Ecuador<span class="ts"></span></span><span class="ti">Registro Petroperú N°3<span class="ts"></span></span>
+    <span class="ti">info@nixagapetrol.com<span class="ts"></span></span>
+    <span class="ti">Diésel ULSD<span class="ts"></span></span><span class="ti">Gasolinas<span class="ts"></span></span>
+    <span class="ti">Asfaltos<span class="ts"></span></span><span class="ti">Importación y Comercialización<span class="ts"></span></span>
+    <span class="ti">Bolivia · Perú · Ecuador<span class="ts"></span></span><span class="ti">Registro Petroperú N°3<span class="ts"></span></span>
+    <span class="ti">info@nixagapetrol.com<span class="ts"></span></span>
+  </div>
+</div>
+
+<!-- ═══ STATS ═══ -->
+<div class="stats">
+  <div class="stat rv"><div class="stat-n">3<sup>+</sup></div><div class="stat-l">Países en Operación</div></div>
+  <div class="stat rv d1"><div class="stat-n">N<sup>°3</sup></div><div class="stat-l">Registro Petroperú</div></div>
+  <div class="stat rv d2"><div class="stat-n">100<sup>%</sup></div><div class="stat-l">Cumplimiento Regulatorio</div></div>
+  <div class="stat rv d3"><div class="stat-n">24<sup>/7</sup></div><div class="stat-l">Operaciones Continuas</div></div>
+</div>
+
+<!-- ═══ SERVICIOS (contenido de imagen 1) ═══ -->
+<section class="sec" id="servicios">
+  <div class="svc-head rv">
+    <div><div class="ew">Lo que hacemos</div><h2>Servicios <em>Especializados</em></h2></div>
+  </div>
+  <div class="svc-grid">
+
+    <!-- 01 Suministro de Combustibles -->
+    <div class="svc rv">
+      <div class="svc-ico">
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="10" y="24" width="28" height="30" rx="4" fill="none" stroke="#28924A" stroke-width="2.5"/>
+          <path d="M10 36h28" stroke="#28924A" stroke-width="2"/>
+          <path d="M22 24V14" stroke="#28924A" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M16 14h12" stroke="#28924A" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M38 30h6a4 4 0 0 1 4 4v6a3 3 0 0 0 6 0V26l-8-8" stroke="#28924A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="17" cy="48" r="3" fill="#155220"/>
+          <circle cx="31" cy="48" r="3" fill="#155220"/>
+        </svg>
+      </div>
+      <div class="svc-t">Suministro de Combustibles</div>
+      <p class="svc-d">Garantizamos abastecimiento continuo y trazabilidad total de combustibles con los más altos estándares de calidad.</p>
+    </div>
+
+    <!-- 02 Ingeniería de Proyectos -->
+    <div class="svc rv d1">
+      <div class="svc-ico">
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M32 10l-20 11v22l20 11 20-11V21L32 10z" stroke="#28924A" stroke-width="2.5" stroke-linejoin="round"/>
+          <path d="M32 10v44M12 21l20 11 20-11" stroke="#28924A" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="32" cy="32" r="5" fill="#155220"/>
+          <path d="M22 26l-6 3M42 26l6 3" stroke="#28924A" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="svc-t">Ingeniería de Proyectos</div>
+      <p class="svc-d">Desarrollo integral de proyectos EPC, retrofits y puesta en marcha cumpliendo normativas internacionales.</p>
+    </div>
+
+    <!-- 03 Mantenimiento Industrial -->
+    <div class="svc rv d2">
+      <div class="svc-ico">
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="32" cy="32" r="10" stroke="#28924A" stroke-width="2.5"/>
+          <circle cx="32" cy="32" r="3" fill="#155220"/>
+          <path d="M32 10v8M32 46v8M10 32h8M46 32h8" stroke="#28924A" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M17.5 17.5l5.7 5.7M40.8 40.8l5.7 5.7M17.5 46.5l5.7-5.7M40.8 23.2l5.7-5.7" stroke="#28924A" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="32" cy="32" r="18" stroke="#28924A" stroke-width="1.2" stroke-dasharray="3 4"/>
+        </svg>
+      </div>
+      <div class="svc-t">Mantenimiento Industrial</div>
+      <p class="svc-d">Ejecución de planes preventivos, correctivos y predictivos para maximizar la vida útil y eficiencia de sus activos.</p>
+    </div>
+
+    <!-- 04 Logística y Transporte -->
+    <div class="svc rv">
+      <div class="svc-ico">
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4" y="22" width="36" height="22" rx="3" stroke="#28924A" stroke-width="2.5"/>
+          <path d="M40 30h10l8 8v6H40V30z" stroke="#28924A" stroke-width="2.5" stroke-linejoin="round"/>
+          <circle cx="15" cy="48" r="5" stroke="#28924A" stroke-width="2.5"/>
+          <circle cx="15" cy="48" r="2" fill="#155220"/>
+          <circle cx="49" cy="48" r="5" stroke="#28924A" stroke-width="2.5"/>
+          <circle cx="49" cy="48" r="2" fill="#155220"/>
+          <path d="M4 34h36" stroke="#28924A" stroke-width="1.5" stroke-dasharray="4 3"/>
+        </svg>
+      </div>
+      <div class="svc-t">Logística y Transporte</div>
+      <p class="svc-d">Planificación estratégica de rutas y transporte especializado para llegar a puntos remotos de forma segura.</p>
+    </div>
+
+    <!-- 05 HSE y Cumplimiento -->
+    <div class="svc rv d1">
+      <div class="svc-ico">
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M32 8L12 16v18c0 13 10 21 20 24 10-3 20-11 20-24V16L32 8z" stroke="#28924A" stroke-width="2.5" stroke-linejoin="round"/>
+          <path d="M32 8L12 16v18c0 13 10 21 20 24 10-3 20-11 20-24V16L32 8z" fill="#155220" opacity=".08"/>
+          <path d="M22 32l7 7 14-14" stroke="#28924A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="svc-t">HSE y Cumplimiento</div>
+      <p class="svc-d">Gestión rigurosa de seguridad industrial, salud ocupacional y medio ambiente, incluyendo auditorías y capacitación.</p>
+    </div>
+
+    <!-- 06 Consultoría Energética -->
+    <div class="svc rv d2">
+      <div class="svc-ico">
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polyline points="8,52 20,36 30,44 42,24 54,12" stroke="#28924A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <polyline points="44,12 54,12 54,22" stroke="#28924A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="8" y="50" width="8" height="8" rx="1" fill="#155220" opacity=".4"/>
+          <rect x="20" y="40" width="8" height="18" rx="1" fill="#155220" opacity=".3"/>
+          <rect x="32" y="44" width="8" height="14" rx="1" fill="#155220" opacity=".4"/>
+        </svg>
+      </div>
+      <div class="svc-t">Consultoría Energética</div>
+      <p class="svc-d">Análisis experto para la optimización de consumo energético y reducción significativa de costos operativos.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══ NOSOTROS ═══ -->
+<section class="sec sec-alt" id="nosotros">
+  <div class="about-grid">
+    <div class="rv">
+      <div class="about-frame">
+        <img src="/image_5.jpg" alt="Puerto costero andino — NIXAGA PETROL SRL">
+        <div class="af-cap">Puerto costero andino · Operación de carga de hidrocarburos</div>
+      </div>
+    </div>
+    <div class="rv d2">
+      <div class="about-blocks">
+
+        <div class="about-block">
+          <div class="about-block-title">Quiénes somos</div>
+          <div class="about-block-body">
+            Empresa especializada en soluciones para la industria energética y de hidrocarburos. Contamos con amplia experiencia resolviendo retos operativos, logísticos y técnicos, siempre con un enfoque prioritario en <strong>seguridad, eficiencia y continuidad operativa</strong>.
+          </div>
+        </div>
+
+        <div class="about-block">
+          <div class="about-block-title">Nuestra Misión</div>
+          <div class="about-block-body">
+            Proveer soluciones confiables y eficientes que generen valor y minimicen riesgos para nuestros clientes en cada operación.
+          </div>
+        </div>
+
+        <div class="about-block">
+          <div class="about-block-title">Nuestra Visión</div>
+          <div class="about-block-body">
+            Ser el <strong>aliado estratégico preferido en la región</strong> por nuestra capacidad de resolver desafíos complejos con innovación.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ COMPROMISOS (imagen 2) ═══ -->
+<section class="commit-section">
+  <div class="chain-glow"></div>
+  <div class="rv"><div class="ew">Nuestros Compromisos</div><h2><span style="color:#fff">Lo que nos</span> <em>define</em></h2></div>
+  <div class="commit-grid">
+
+    <!-- Seguridad Primero -->
+    <div class="commit-card rv">
+      <div class="commit-ico">
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M32 8L12 16v18c0 13 10 21 20 24 10-3 20-11 20-24V16L32 8z" stroke="#3DB85E" stroke-width="2.5" stroke-linejoin="round"/>
+          <path d="M32 8L12 16v18c0 13 10 21 20 24 10-3 20-11 20-24V16L32 8z" fill="#3DB85E" opacity=".08"/>
+          <path d="M24 32c0-4 3.6-7 8-7s8 3 8 7-3.6 7-8 7" stroke="#3DB85E" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="32" cy="32" r="3" fill="#3DB85E"/>
+          <path d="M32 25v-4M32 43v-4" stroke="#3DB85E" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="commit-t">Seguridad Primero</div>
+      <p class="commit-d">Cero incidentes como cultura base. Protegemos proactivamente a nuestra gente, activos y el entorno.</p>
+    </div>
+
+    <!-- Calidad Certificable -->
+    <div class="commit-card rv d1">
+      <div class="commit-ico">
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M32 8l4.5 9.1 10.1 1.5-7.3 7.1 1.7 10-9-4.7-9 4.7 1.7-10-7.3-7.1 10.1-1.5L32 8z" stroke="#3DB85E" stroke-width="2.5" stroke-linejoin="round" fill="none"/>
+          <path d="M32 8l4.5 9.1 10.1 1.5-7.3 7.1 1.7 10-9-4.7-9 4.7 1.7-10-7.3-7.1 10.1-1.5L32 8z" fill="#3DB85E" opacity=".08"/>
+          <path d="M24 40l5 5 12-12" stroke="#3DB85E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="commit-t">Calidad Certificable</div>
+      <p class="commit-d">Procesos estandarizados, trazables y auditables que cumplen estrictamente con normativas internacionales.</p>
+    </div>
+
+    <!-- Innovación Aplicada -->
+    <div class="commit-card rv d2">
+      <div class="commit-ico">
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M32 10a16 16 0 0 1 8 30v6H24v-6A16 16 0 0 1 32 10z" stroke="#3DB85E" stroke-width="2.5" stroke-linejoin="round"/>
+          <path d="M32 10a16 16 0 0 1 8 30v6H24v-6A16 16 0 0 1 32 10z" fill="#3DB85E" opacity=".07"/>
+          <path d="M26 50h12M28 54h8" stroke="#3DB85E" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M32 18v8l5 4" stroke="#3DB85E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="commit-t">Innovación Aplicada</div>
+      <p class="commit-d">Implementamos soluciones tecnológicas y prácticas, enfocadas en resolver problemas reales, no solo en teoría.</p>
+    </div>
+
+    <!-- Sostenibilidad -->
+    <div class="commit-card rv d1">
+      <div class="commit-ico">
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M32 52C18 52 10 42 12 28c8 6 16 4 20 0 4 8 12 10 18 6-2 12-8 18-18 18z" stroke="#3DB85E" stroke-width="2.5" stroke-linejoin="round"/>
+          <path d="M32 52C18 52 10 42 12 28c8 6 16 4 20 0 4 8 12 10 18 6-2 12-8 18-18 18z" fill="#3DB85E" opacity=".08"/>
+          <path d="M32 52V32" stroke="#3DB85E" stroke-width="2" stroke-linecap="round"/>
+          <path d="M24 14c0 0 4 8 8 10 4-2 8-10 8-10" stroke="#3DB85E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="commit-t">Sostenibilidad</div>
+      <p class="commit-d">Compromiso firme con la eficiencia energética y el manejo responsable de los recursos para un futuro viable.</p>
+    </div>
+
+    <!-- Agilidad -->
+    <div class="commit-card rv d2">
+      <div class="commit-ico">
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M36 10l-12 22h14L26 54" stroke="#3DB85E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M26 10l-12 22h14L16 54" stroke="#3DB85E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".35"/>
+        </svg>
+      </div>
+      <div class="commit-t">Agilidad</div>
+      <p class="commit-d">Capacidad de respuesta rápida y flexible ante emergencias, paradas de planta o cambios en el entorno operativo.</p>
+    </div>
+
+    <!-- Transparencia -->
+    <div class="commit-card rv d3">
+      <div class="commit-ico">
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 28l-10 6 10 6M44 28l10 6-10 6" stroke="#3DB85E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M26 46l12-28" stroke="#3DB85E" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="32" cy="32" r="4" stroke="#3DB85E" stroke-width="2" fill="#3DB85E" opacity=".2"/>
+          <rect x="14" y="20" width="36" height="24" rx="6" stroke="#3DB85E" stroke-width="2" opacity=".3"/>
+        </svg>
+      </div>
+      <div class="commit-t">Transparencia</div>
+      <p class="commit-d">Comunicación clara, ética e íntegra con reportes oportunos y visibilidad total en cada etapa del proyecto.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══ MERCADOS ═══ -->
+<section class="sec sec-alt" id="mercados">
+  <div class="rv"><div class="ew">Presencia Regional</div><h2>Mercados <em>Operativos</em></h2></div>
+  <div class="mkt-list">
+    <div class="mkt-row rv">
+      <div class="mkt-l">
+        <span class="mkt-num">01</span>
+        <div class="mkt-flag-wrap">
+          <img src="https://flagcdn.com/w80/bo.png" alt="Bolivia" class="mkt-flag-img" onerror="this.style.display='none'">
+        </div>
+        <span class="mkt-name">Bolivia</span>
+      </div>
+      <span class="mkt-badge">Mercado Principal</span>
+    </div>
+    <div class="mkt-row rv d1">
+      <div class="mkt-l">
+        <span class="mkt-num">02</span>
+        <div class="mkt-flag-wrap">
+          <img src="https://flagcdn.com/w80/pe.png" alt="Perú" class="mkt-flag-img" onerror="this.style.display='none'">
+        </div>
+        <span class="mkt-name">Perú</span>
+      </div>
+      <span class="mkt-badge">Proveedor Petroperú</span>
+    </div>
+    <div class="mkt-row rv d2">
+      <div class="mkt-l">
+        <span class="mkt-num">03</span>
+        <div class="mkt-flag-wrap">
+          <img src="https://flagcdn.com/w80/ec.png" alt="Ecuador" class="mkt-flag-img" onerror="this.style.display='none'">
+        </div>
+        <span class="mkt-name">Ecuador</span>
+      </div>
+      <span class="mkt-badge">Exportaciones Activas</span>
+    </div>
+    <div class="mkt-row rv d3">
+      <div class="mkt-l">
+        <span class="mkt-num">04</span>
+        <div class="mkt-flag-wrap mkt-flag-andina">
+          <svg viewBox="0 0 56 38" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:56px;height:38px;border-radius:3px">
+            <rect width="56" height="38" fill="#1A3A6B"/>
+            <polygon points="10,30 20,12 30,26 38,16 48,30" fill="none" stroke="#F0C040" stroke-width="2.5" stroke-linejoin="round"/>
+            <circle cx="20" cy="20" r="3" fill="#F0C040"/>
+            <path d="M4 34 Q28 28 52 34" stroke="#F0C040" stroke-width="1.2" stroke-dasharray="3 2" fill="none"/>
+          </svg>
+        </div>
+        <span class="mkt-name">Región Andina</span>
+      </div>
+      <span class="mkt-badge">En Expansión</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PRODUCTOS ═══ -->
+<section class="sec" id="productos">
+  <div class="rv"><div class="ew">Portafolio</div><h2>Línea de <em>Productos</em></h2></div>
+  <div class="prod-grid">
+
+    <!-- DIESEL ULSD — nuevo contenido -->
+    <div class="prod rv">
+      <div class="prod-tag">Combustible</div>
+      <div class="prod-name">Diésel ULSD</div>
+      <div class="prod-spec">EN590 · 10 ppm</div>
+      <p class="prod-desc">Producto clave para sectores estratégicos como <strong style="color:var(--BK);font-weight:600">minería, agroindustria, transporte y generación eléctrica</strong>.</p>
+      <div class="prod-line"></div>
+    </div>
+
+    <div class="prod rv d1">
+      <div class="prod-tag">Combustible</div>
+      <div class="prod-name">Gasolinas</div>
+      <p class="prod-desc">Ron 87, Ron 90 y Ron 95+ para distribución en mercados con requerimientos diferenciados de rendimiento.</p>
+      <div class="prod-line"></div>
+    </div>
+    <div class="prod rv d2">
+      <div class="prod-tag">Gas</div>
+      <div class="prod-name">GLP</div>
+      <div class="prod-spec">Gas Licuado de Petróleo</div>
+      <p class="prod-desc">Suministro de gas licuado para uso doméstico, industrial y vehicular. Distribución segura con trazabilidad completa y cumplimiento de normativas técnicas nacionales.</p>
+      <div class="prod-line"></div>
+    </div>
+    <div class="prod prod-wide rv d3">
+      <div class="prod-tag">Aviación</div>
+      <div class="prod-name">Jet Fuel</div>
+      <div class="prod-spec">Jet A-1 · ASTM D1655</div>
+      <p class="prod-desc">Combustible de aviación de alta pureza para aeronaves comerciales y militares. Cumple con estándares internacionales ASTM D1655 y DEF STAN 91-091, con especificaciones de punto de congelamiento, contenido de azufre y estabilidad térmica garantizados. Suministro documentado con certificados de calidad en cada operación.</p>
+      <div class="prod-line"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTACTO ═══ -->
+<section class="sec sec-alt" id="contacto">
+  <div class="rv"><div class="ew">Escríbenos</div><h2>¿Necesita <em>combustible?</em></h2></div>
+  <div style="height:clamp(26px,4vh,46px)"></div>
+  <div class="contact-wrap">
+    <div class="rv">
+      <p class="ci-intro">Contáctenos para cotizaciones o para iniciar una relación comercial. Respondemos en menos de 24 horas hábiles.</p>
+      <div class="ci-list">
+        <div class="ci">
+          <div class="ci-ico"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18"/><path d="M3 9h6"/><path d="M3 15h6"/><path d="M12 8h6"/><path d="M12 12h6"/><path d="M12 16h6"/></svg></div>
+          <div><div class="ci-lbl">Empresa</div><div class="ci-val">NIXAGA PETROL SRL</div></div>
+        </div>
+        <div class="ci">
+          <div class="ci-ico"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg></div>
+          <div><div class="ci-lbl">Correo Electrónico</div><div class="ci-val"><a href="mailto:info@nixagapetrol.com">info@nixagapetrol.com</a></div></div>
+        </div>
+        <div class="ci">
+          <div class="ci-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+          <div><div class="ci-lbl">Operaciones</div><div class="ci-val">Bolivia · Perú · Ecuador</div></div>
+        </div>
+        <div class="ci">
+          <div class="ci-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M9 12l-4 8h14l-4-8"/><path d="M9 12l3 4 3-4"/></svg></div>
+          <div><div class="ci-lbl">Certificación</div><div class="ci-val">Proveedor Internacional Petroperú N°3</div></div>
+        </div>
+      </div>
+      <a href="https://www.facebook.com/share/1CRa4P9ULR/" target="_blank" rel="noopener" class="ci-fb">
+        <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        Síguenos en Facebook
+      </a>
+    </div>
+    <div class="form rv d2">
+      <div class="f-row">
+        <div class="fg"><label>Nombre</label><input type="text" placeholder="Juan García"></div>
+        <div class="fg"><label>Empresa</label><input type="text" placeholder="Mi Empresa S.A."></div>
+      </div>
+      <div class="fg"><label>Correo Electrónico</label><input type="email" placeholder="contacto@empresa.com"></div>
+      <div class="fg">
+        <label>Producto de Interés</label>
+        <select>
+          <option value="">Seleccionar...</option>
+          <option>Diésel ULSD (EN590 10 ppm)</option>
+          <option>Gasolina Regular (Ron 87)</option>
+          <option>Gasolina Extra (Ron 90)</option>
+          <option>Gasolina Premium (Ron 95+)</option>
+          <option>Asfalto</option>
+          <option>Otros Derivados</option>
+        </select>
+      </div>
+      <div class="fg"><label>Mensaje</label><textarea placeholder="Describa su requerimiento, volumen estimado y destino..."></textarea></div>
+      <button class="f-btn" onclick="alert('Mensaje enviado. Nos pondremos en contacto a la brevedad.')">Enviar Consulta</button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="foot-top">
+    <div class="foot-logo">
+      <svg viewBox="0 0 38 38" fill="none">
+        <circle cx="19" cy="19" r="17.5" stroke="#28924A" stroke-width="1.2"/>
+        <circle cx="19" cy="19" r="14.5" fill="#0D190F"/>
+        <path d="M19 5C19 5,27.5 14.5,27.5 21C27.5 26.2 23.7 30.5 19 30.5C14.3 30.5 10.5 26.2 10.5 21C10.5 14.5 19 5 19 5Z" fill="#155220"/>
+        <path d="M19 9C19 9,25.5 16.5,25.5 21C25.5 24.2 23.3 27 20.3 28.3" stroke="#3DB85E" stroke-width="1.4" stroke-linecap="round" fill="none" opacity=".55"/>
+        <circle cx="16.5" cy="19.5" r="1.7" fill="white" opacity=".22"/>
+      </svg>
+      <div>
+        <div class="foot-name">NIXAGA <span>PETROL</span> SRL</div>
+        <div class="foot-tag">Proveedor Internacional de Hidrocarburos</div>
+      </div>
+    </div>
+    <ul class="foot-links">
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#mercados">Mercados</a></li>
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <div class="foot-social">
+      <a href="https://www.facebook.com/share/1CRa4P9ULR/" target="_blank" rel="noopener" class="foot-s" title="Facebook">
+        <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+      </a>
+      <a href="mailto:info@nixagapetrol.com" class="foot-s" title="Email">
+        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      </a>
+    </div>
+  </div>
+  <div class="foot-bot">
+    <div class="foot-leg">© 2025 NIXAGA PETROL SRL — Todos los derechos reservados</div>
+    <div class="foot-reg">Registro Petroperú &nbsp;<span>Proveedor Internacional N°3</span></div>
+  </div>
+</footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
