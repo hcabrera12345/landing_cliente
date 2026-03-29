@@ -1,0 +1,26 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  # 1. Forzar redirección de HTTP inseguro a HTTPS seguro automáticamente
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+<IfModule mod_headers.c>
+  # 2. HSTS (Strict-Transport-Security): Obliga a todos a usar encriptación por 1 año
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" env=HTTPS
+  
+  # 3. Prevenir Clickjacking (Clonación visual de tu sitio web)
+  Header always set X-Frame-Options "SAMEORIGIN"
+  
+  # 4. Prevenir ataques de cambio de tipo MIME (Sniffing)
+  Header always set X-Content-Type-Options "nosniff"
+  
+  # 5. Activar el filtro XSS nativo del navegador del usuario
+  Header always set X-XSS-Protection "1; mode=block"
+
+  # 6. Política estricta al hacer clic en enlaces externos (Privacidad)
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  
+  # 7. Content Security Policy (CSP): Bloquear scripts no autorizados (protección anti-hackeo)
+  Header always set Content-Security-Policy "default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval';"
+</IfModule>
