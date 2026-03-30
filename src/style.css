@@ -43,7 +43,7 @@ nav.scrolled{box-shadow:0 2px 20px rgba(21,82,32,.09)}
 .cr-track{position:absolute;inset:0;display:flex;transition:transform .95s cubic-bezier(.76,0,.18,1)}
 .cr-slide{min-width:100%;height:100%;position:relative;flex-shrink:0}
 .cr-slide-photo img{width:100%;height:100%;object-fit:cover;object-position:center 45%}
-.cr-slide-photo::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,8,8,.46) 0%,rgba(8,8,8,.08) 30%,rgba(8,8,8,.06) 52%,rgba(8,8,8,.40) 72%,rgba(8,8,8,.90) 100%),linear-gradient(100deg,rgba(8,8,8,.76) 0%,rgba(8,8,8,.24) 44%,rgba(8,8,8,0) 100%)}
+.cr-slide-photo::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,8,8,.0) 0%,rgba(8,8,8,.0) 40%,rgba(8,8,8,.55) 72%,rgba(8,8,8,.88) 100%)}
 .cr-ph{width:100%;height:100%;background:var(--SN);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
 .cr-ph::before{content:'';position:absolute;inset:0;background-image:radial-gradient(var(--BRD) 1px,transparent 1px);background-size:30px 30px}
 .cr-ph-wm{position:absolute;font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(180px,28vw,380px);color:rgba(21,82,32,.04);line-height:1;bottom:-.1em;right:0;user-select:none;transform:translateX(5%)}
@@ -65,7 +65,7 @@ nav.scrolled{box-shadow:0 2px 20px rgba(21,82,32,.09)}
 .h-ey-txt{font-family:'Inter',sans-serif;font-weight:500;font-size:clamp(11px,1.1vw,14px);letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.88)}
 .hero-copy h1{font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(54px,9vw,118px);line-height:.92;letter-spacing:.04em;color:#FFF;text-shadow:0 4px 40px rgba(0,0,0,.28);opacity:0;animation:fadeUp .9s .38s forwards}
 .hero-copy h1 em{font-style:italic;color:var(--GL);-webkit-text-stroke:0px}
-.h-sub{margin-top:clamp(14px,2vh,24px);font-family:'Inter',sans-serif;font-weight:300;font-size:clamp(13px,1.3vw,16.5px);line-height:1.78;color:rgba(240,248,240,.85);max-width:660px;text-shadow:0 2px 16px rgba(0,0,0,.38);opacity:0;animation:fadeUp .9s .52s forwards}
+.h-sub{margin-top:clamp(14px,2vh,24px);font-family:'Inter',sans-serif;font-weight:600;font-size:clamp(14px,1.4vw,17.5px);line-height:1.78;color:rgba(240,248,240,.92);max-width:660px;text-shadow:0 2px 16px rgba(0,0,0,.38);opacity:0;animation:fadeUp .9s .52s forwards}
 .h-sub strong{color:#fff;font-weight:600}
 .hero-ctas{margin-top:clamp(20px,3vh,38px);display:flex;gap:12px;flex-wrap:wrap;opacity:0;animation:fadeUp .9s .66s forwards}
 .btn{font-family:'Inter',sans-serif;font-weight:700;font-size:clamp(10px,.95vw,12px);letter-spacing:.16em;text-transform:uppercase;padding:clamp(11px,1.5vh,15px) clamp(20px,2.5vw,38px);border:none;cursor:pointer;display:inline-block;transition:transform .2s,background .2s,color .2s,border-color .2s;white-space:nowrap}
