@@ -1,4 +1,4 @@
-name: Deploy to Hostinger via LFTP
+name: Deploy to Hostinger FTP
 
 on:
   push:
@@ -24,29 +24,12 @@ jobs:
       - name: Build Project (Vite)
         run: npm run build
 
-      - name: Install lftp
-        run: sudo apt-get install -y lftp
-
-      - name: Show remote directory structure (debug)
-        run: |
-          lftp -u "${{ secrets.FTP_USERNAME }}","${{ secrets.FTP_PASSWORD }}" "${{ secrets.FTP_SERVER }}" <<EOF
-          set ftp:ssl-allow yes
-          set ftp:passive-mode yes
-          set ssl:verify-certificate no
-          set net:timeout 30
-          ls -la
-          ls -la domains/ || echo "no domains folder at root"
-          bye
-          EOF
-
-      - name: Deploy to Hostinger via LFTP
-        run: |
-          lftp -u "${{ secrets.FTP_USERNAME }}","${{ secrets.FTP_PASSWORD }}" "${{ secrets.FTP_SERVER }}" <<EOF
-          set ftp:ssl-allow yes
-          set ftp:passive-mode yes
-          set ssl:verify-certificate no
-          set net:timeout 30
-          set net:max-retries 3
-          mirror --reverse --delete --verbose dist/ domains/nixagapetrol.com/public_html/
-          bye
-          EOF
+      - name: Upload to Hostinger via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/
+          server-dir: ./domains/nixagapetrol.com/public_html/
+          dangerous-clean-slate: false
