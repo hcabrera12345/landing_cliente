@@ -32,4 +32,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/
           server-dir: ./domains/nixagapetrol.com/public_html/
-          dangerous-clean-slate: false
+          dangerous-clean-slate: true
