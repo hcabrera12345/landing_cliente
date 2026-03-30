@@ -31,5 +31,5 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/
-          server-dir: ./domains/nixagapetrol.com/public_html/
+          server-dir: /domains/nixagapetrol.com/public_html/
           dangerous-clean-slate: false
