@@ -62,7 +62,7 @@ nav.scrolled{box-shadow:0 2px 20px rgba(21,82,32,.09)}
 .hero-copy{position:relative;z-index:5;padding:0 var(--P) clamp(48px,8vh,96px);max-width:min(900px,92vw)}
 .h-ey{display:flex;align-items:center;gap:12px;margin-bottom:clamp(16px,2.5vh,30px);flex-wrap:wrap;opacity:0;animation:fadeUp .8s .25s forwards}
 .h-ey::before{content:'';width:24px;height:1px;background:rgba(255,255,255,.55);flex-shrink:0}
-.h-ey-txt{font-family:'Inter',sans-serif;font-weight:500;font-size:clamp(11px,1.1vw,14px);letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.88)}
+.h-ey-txt{font-family:'Inter',sans-serif;font-weight:700;font-size:clamp(12px,1.21vw,15.5px);letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.95)}
 .hero-copy h1{font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(54px,9vw,118px);line-height:.92;letter-spacing:.04em;color:#FFF;text-shadow:0 4px 40px rgba(0,0,0,.28);opacity:0;animation:fadeUp .9s .38s forwards}
 .hero-copy h1 em{font-style:italic;color:var(--GL);-webkit-text-stroke:0px}
 .h-sub{margin-top:clamp(14px,2vh,24px);font-family:'Inter',sans-serif;font-weight:600;font-size:clamp(14px,1.4vw,17.5px);line-height:1.78;color:rgba(240,248,240,.92);max-width:660px;text-shadow:0 2px 16px rgba(0,0,0,.38);opacity:0;animation:fadeUp .9s .52s forwards}
