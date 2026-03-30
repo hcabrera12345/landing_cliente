@@ -49,3 +49,43 @@ if(trk) start();
 
 const obs=new IntersectionObserver(en=>en.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');obs.unobserve(e.target)}}),{threshold:.08});
 document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
+
+// ── Formulario de Contacto Web3Forms ──
+const form = document.getElementById('contactForm');
+if(form){
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    const btn = document.getElementById('submitBtn');
+    const success = document.getElementById('formSuccess');
+    const error = document.getElementById('formError');
+
+    // Estado de carga
+    btn.textContent = 'Enviando...';
+    btn.disabled = true;
+    btn.style.opacity = '0.7';
+    success.style.display = 'none';
+    error.style.display = 'none';
+
+    try {
+      const data = new FormData(form);
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: data
+      });
+      const json = await res.json();
+
+      if(json.success){
+        success.style.display = 'block';
+        form.reset();
+      } else {
+        error.style.display = 'block';
+      }
+    } catch(err){
+      error.style.display = 'block';
+    } finally {
+      btn.textContent = 'Enviar Consulta';
+      btn.disabled = false;
+      btn.style.opacity = '1';
+    }
+  });
+}

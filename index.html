@@ -485,15 +485,31 @@
         Síguenos en Facebook
       </a>
     </div>
-    <div class="form rv d2">
+    <form class="form rv d2" id="contactForm">
+      <!-- Web3Forms Config -->
+      <input type="hidden" name="access_key" value="4dbc7e17-4219-43fb-8c1a-fc1e32995cbb">
+      <input type="hidden" name="subject" value="Nueva Consulta desde nixagapetrol.com">
+      <input type="hidden" name="from_name" value="Nixaga Petrol - Formulario Web">
+      <input type="hidden" name="redirect" value="false">
+      <input type="checkbox" name="botcheck" style="display:none">
+
       <div class="f-row">
-        <div class="fg"><label>Nombre</label><input type="text" placeholder="Juan García"></div>
-        <div class="fg"><label>Empresa</label><input type="text" placeholder="Mi Empresa S.A."></div>
+        <div class="fg">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" type="text" name="name" placeholder="Juan García" required>
+        </div>
+        <div class="fg">
+          <label for="empresa">Empresa</label>
+          <input id="empresa" type="text" name="empresa" placeholder="Mi Empresa S.A.">
+        </div>
       </div>
-      <div class="fg"><label>Correo Electrónico</label><input type="email" placeholder="contacto@empresa.com"></div>
       <div class="fg">
-        <label>Producto de Interés</label>
-        <select>
+        <label for="email">Correo Electrónico</label>
+        <input id="email" type="email" name="email" placeholder="contacto@empresa.com" required>
+      </div>
+      <div class="fg">
+        <label for="producto">Producto de Interés</label>
+        <select id="producto" name="producto">
           <option value="">Seleccionar...</option>
           <option>Diésel ULSD (EN590 10 ppm)</option>
           <option>Gasolina Regular (Ron 87)</option>
@@ -503,9 +519,23 @@
           <option>Otros Derivados</option>
         </select>
       </div>
-      <div class="fg"><label>Mensaje</label><textarea placeholder="Describa su requerimiento, volumen estimado y destino..."></textarea></div>
-      <button class="f-btn" onclick="alert('Mensaje enviado. Nos pondremos en contacto a la brevedad.')">Enviar Consulta</button>
-    </div>
+      <div class="fg">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="message" placeholder="Describa su requerimiento, volumen estimado y destino..." required></textarea>
+      </div>
+
+      <!-- Mensaje de éxito -->
+      <div id="formSuccess" style="display:none;background:var(--GBG2);border:1px solid var(--G3);padding:16px 20px;margin-top:8px">
+        <p style="font-family:'Inter',sans-serif;font-weight:600;font-size:14px;color:var(--G);margin:0">✓ Mensaje enviado correctamente</p>
+        <p style="font-family:'Inter',sans-serif;font-weight:300;font-size:13px;color:var(--MID);margin:6px 0 0">Nos pondremos en contacto en menos de 24 horas hábiles.</p>
+      </div>
+      <!-- Mensaje de error -->
+      <div id="formError" style="display:none;background:#fff0f0;border:1px solid #e53e3e;padding:16px 20px;margin-top:8px">
+        <p style="font-family:'Inter',sans-serif;font-weight:600;font-size:14px;color:#e53e3e;margin:0">Error al enviar. Por favor intente nuevamente.</p>
+      </div>
+
+      <button type="submit" class="f-btn" id="submitBtn">Enviar Consulta</button>
+    </form>
   </div>
 </section>
 
