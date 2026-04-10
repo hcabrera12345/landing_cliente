@@ -20,7 +20,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/src/style.css">
+  <link rel="stylesheet" href="./src/style.css">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WFTB0HVQ4V"></script>
   <script>
@@ -65,17 +65,17 @@
 <!-- ═══ HERO ═══ -->
 <section class="hero" id="hero">
   <div class="cr-track" id="crT">
-    <div class="cr-slide cr-slide-photo"><img src="/hero.jpg" alt="Tanquero — NIXAGA PETROL SRL"></div>
+    <div class="cr-slide cr-slide-photo"><img src="./hero.jpg" alt="Tanquero — NIXAGA PETROL SRL"></div>
     <div class="cr-slide cr-slide-photo">
-      <img src="/image_2.jpg" alt="Estación de servicio YPFB — Distribución de combustibles Bolivia">
+      <img src="./image_2.jpg" alt="Estación de servicio YPFB — Distribución de combustibles Bolivia">
       <div class="cr-slide-caption">Estación de Servicio YPFB · Bolivia</div>
     </div>
     <div class="cr-slide cr-slide-photo">
-      <img src="/image_3.jpg" alt="Planta de almacenaje YPFB Palmasola — Santa Cruz de la Sierra">
+      <img src="./image_3.jpg" alt="Planta de almacenaje YPFB Palmasola — Santa Cruz de la Sierra">
       <div class="cr-slide-caption">Planta de Almacenaje YPFB · Santa Cruz de la Sierra</div>
     </div>
     <div class="cr-slide cr-slide-photo">
-      <img src="/image_4.jpg" alt="Puerto Arica — Despacho de cisternas de combustible">
+      <img src="./image_4.jpg" alt="Puerto Arica — Despacho de cisternas de combustible">
       <div class="cr-slide-caption">Puerto Arica · Despacho de Cisternas</div>
     </div>
     <div class="cr-slide"><div class="cr-ph"><div class="cr-ph-wm">05</div><div class="cr-ph-body"><div class="cr-ph-ico">🌎</div><div class="cr-ph-t">Operaciones<br>Regionales</div><div class="cr-ph-s">Foto 05 · Próximamente</div></div><div class="cr-ph-bar"></div></div></div>
@@ -117,7 +117,7 @@
   <div class="about-grid">
     <div class="rv">
       <div class="about-frame">
-        <img src="/image_5.jpg" alt="Puerto costero andino — NIXAGA PETROL SRL">
+        <img src="./image_5.jpg" alt="Puerto costero andino — NIXAGA PETROL SRL">
         <div class="af-cap">Puerto costero andino · Operación de carga de hidrocarburos</div>
       </div>
     </div>
@@ -262,20 +262,23 @@
 
     <!-- DIESEL -->
     <div class="prod rv" style="position:relative;">
-      <div style="position:absolute; top:24px; right:24px; display:flex; flex-direction:column; align-items:center; gap:4px; opacity:0.95;">
-        <svg width="46" height="46" viewBox="0 0 100 100">
-          <polygon points="50,2 98,50 50,98 2,50" fill="#fff" stroke="#000" stroke-width="2"/>
-          <polygon points="50,2 50,50 2,50" fill="#005AA1"/>
-          <polygon points="50,2 98,50 50,50" fill="#E2231A"/>
-          <polygon points="50,50 98,50 50,98" fill="#FFC423"/>
-          <polygon points="2,50 50,50 50,98" fill="#FFFFFF"/>
-          <line x1="2" y1="50" x2="98" y2="50" stroke="#000" stroke-width="2"/>
-          <line x1="50" y1="2" x2="50" y2="98" stroke="#000" stroke-width="2"/>
-          <text x="26" y="60" font-family="'Inter', Arial" font-weight="800" font-size="32" fill="#FFF" text-anchor="middle">1</text>
-          <text x="50" y="36" font-family="'Inter', Arial" font-weight="800" font-size="32" fill="#FFF" text-anchor="middle">2</text>
-          <text x="74" y="60" font-family="'Inter', Arial" font-weight="800" font-size="32" fill="#000" text-anchor="middle">0</text>
+      <div style="position:absolute; top:20px; right:20px; opacity:0.98;">
+        <svg width="84" height="84" viewBox="0 0 100 100">
+          <polygon points="50,2 98,50 50,98 2,50" fill="#fff" stroke="#000" stroke-width="2.5"/>
+          <polygon points="50,8 71,29 50,50 29,29" fill="#DF2A26" stroke="#000" stroke-width="1.5" stroke-linejoin="round"/>
+          <polygon points="71,29 92,50 71,71 50,50" fill="#F4CD16" stroke="#000" stroke-width="1.5" stroke-linejoin="round"/>
+          <polygon points="29,29 50,50 29,71 8,50" fill="#0B75BA" stroke="#000" stroke-width="1.5" stroke-linejoin="round"/>
+          <polygon points="50,50 71,71 50,92 29,71" fill="#FFFFFF" stroke="#000" stroke-width="1.5" stroke-linejoin="round"/>
+          <text x="29" y="60" font-family="'Inter', sans-serif" font-weight="900" font-size="28" fill="#000" text-anchor="middle">1</text>
+          <text x="50" y="39" font-family="'Inter', sans-serif" font-weight="900" font-size="28" fill="#000" text-anchor="middle">2</text>
+          <text x="71" y="60" font-family="'Inter', sans-serif" font-weight="900" font-size="28" fill="#000" text-anchor="middle">0</text>
+          <path d="M50 54 C46 60 44 64 47 70 C49 73 53 73 53 70 C56 64 54 60 50 54 Z" fill="#000"/>
+          <path d="M47 62 C44 65 44 69 46 70 C47 68 47 65 47 62 Z" fill="#FFF"/>
+          <path d="M54 62 C56 65 56 69 54 70 C53 68 53 65 54 62 Z" fill="#FFF"/>
+          <rect x="42" y="73" width="16" height="1.5" fill="#000"/>
+          <text x="50" y="84" font-family="'Oswald', sans-serif" font-weight="700" font-size="12" letter-spacing="-0.5" fill="#000" text-anchor="middle">UN 1202</text>
+          <circle cx="50" cy="88.5" r="1.5" fill="#000"/>
         </svg>
-        <div style="font-family:'Oswald',sans-serif; font-size:12px; font-weight:700; color:#155220; letter-spacing:0.5px; border-bottom:2px solid #155220; line-height:1;">UN 1202</div>
       </div>
       <div class="prod-tag">Combustible</div>
       <div class="prod-name">Diésel</div>
@@ -286,20 +289,23 @@
 
     <!-- GASOLINAS -->
     <div class="prod rv d1" style="position:relative;">
-      <div style="position:absolute; top:24px; right:24px; display:flex; flex-direction:column; align-items:center; gap:4px; opacity:0.95;">
-        <svg width="46" height="46" viewBox="0 0 100 100">
-          <polygon points="50,2 98,50 50,98 2,50" fill="#fff" stroke="#000" stroke-width="2"/>
-          <polygon points="50,2 50,50 2,50" fill="#005AA1"/>
-          <polygon points="50,2 98,50 50,50" fill="#E2231A"/>
-          <polygon points="50,50 98,50 50,98" fill="#FFC423"/>
-          <polygon points="2,50 50,50 50,98" fill="#FFFFFF"/>
-          <line x1="2" y1="50" x2="98" y2="50" stroke="#000" stroke-width="2"/>
-          <line x1="50" y1="2" x2="50" y2="98" stroke="#000" stroke-width="2"/>
-          <text x="26" y="60" font-family="'Inter', Arial" font-weight="800" font-size="32" fill="#FFF" text-anchor="middle">1</text>
-          <text x="50" y="36" font-family="'Inter', Arial" font-weight="800" font-size="32" fill="#FFF" text-anchor="middle">3</text>
-          <text x="74" y="60" font-family="'Inter', Arial" font-weight="800" font-size="32" fill="#000" text-anchor="middle">0</text>
+      <div style="position:absolute; top:20px; right:20px; opacity:0.98;">
+        <svg width="84" height="84" viewBox="0 0 100 100">
+          <polygon points="50,2 98,50 50,98 2,50" fill="#fff" stroke="#000" stroke-width="2.5"/>
+          <polygon points="50,8 71,29 50,50 29,29" fill="#DF2A26" stroke="#000" stroke-width="1.5" stroke-linejoin="round"/>
+          <polygon points="71,29 92,50 71,71 50,50" fill="#F4CD16" stroke="#000" stroke-width="1.5" stroke-linejoin="round"/>
+          <polygon points="29,29 50,50 29,71 8,50" fill="#0B75BA" stroke="#000" stroke-width="1.5" stroke-linejoin="round"/>
+          <polygon points="50,50 71,71 50,92 29,71" fill="#FFFFFF" stroke="#000" stroke-width="1.5" stroke-linejoin="round"/>
+          <text x="29" y="60" font-family="'Inter', sans-serif" font-weight="900" font-size="28" fill="#000" text-anchor="middle">1</text>
+          <text x="50" y="39" font-family="'Inter', sans-serif" font-weight="900" font-size="28" fill="#000" text-anchor="middle">3</text>
+          <text x="71" y="60" font-family="'Inter', sans-serif" font-weight="900" font-size="28" fill="#000" text-anchor="middle">0</text>
+          <path d="M50 54 C46 60 44 64 47 70 C49 73 53 73 53 70 C56 64 54 60 50 54 Z" fill="#000"/>
+          <path d="M47 62 C44 65 44 69 46 70 C47 68 47 65 47 62 Z" fill="#FFF"/>
+          <path d="M54 62 C56 65 56 69 54 70 C53 68 53 65 54 62 Z" fill="#FFF"/>
+          <rect x="42" y="73" width="16" height="1.5" fill="#000"/>
+          <text x="50" y="84" font-family="'Oswald', sans-serif" font-weight="700" font-size="12" letter-spacing="-0.5" fill="#000" text-anchor="middle">UN 1203</text>
+          <circle cx="50" cy="88.5" r="1.5" fill="#000"/>
         </svg>
-        <div style="font-family:'Oswald',sans-serif; font-size:12px; font-weight:700; color:#155220; letter-spacing:0.5px; border-bottom:2px solid #155220; line-height:1;">UN 1203</div>
       </div>
       <div class="prod-tag">Combustible</div>
       <div class="prod-name">Gasolinas</div>
@@ -308,20 +314,23 @@
     </div>
     <!-- GLP -->
     <div class="prod rv d2" style="position:relative;">
-      <div style="position:absolute; top:24px; right:24px; display:flex; flex-direction:column; align-items:center; gap:4px; opacity:0.95;">
-        <svg width="46" height="46" viewBox="0 0 100 100">
-          <polygon points="50,2 98,50 50,98 2,50" fill="#fff" stroke="#000" stroke-width="2"/>
-          <polygon points="50,2 50,50 2,50" fill="#005AA1"/>
-          <polygon points="50,2 98,50 50,50" fill="#E2231A"/>
-          <polygon points="50,50 98,50 50,98" fill="#FFC423"/>
-          <polygon points="2,50 50,50 50,98" fill="#FFFFFF"/>
-          <line x1="2" y1="50" x2="98" y2="50" stroke="#000" stroke-width="2"/>
-          <line x1="50" y1="2" x2="50" y2="98" stroke="#000" stroke-width="2"/>
-          <text x="26" y="60" font-family="'Inter', Arial" font-weight="800" font-size="32" fill="#FFF" text-anchor="middle">1</text>
-          <text x="50" y="36" font-family="'Inter', Arial" font-weight="800" font-size="32" fill="#FFF" text-anchor="middle">4</text>
-          <text x="74" y="60" font-family="'Inter', Arial" font-weight="800" font-size="32" fill="#000" text-anchor="middle">0</text>
+      <div style="position:absolute; top:20px; right:20px; opacity:0.98;">
+        <svg width="84" height="84" viewBox="0 0 100 100">
+          <polygon points="50,2 98,50 50,98 2,50" fill="#fff" stroke="#000" stroke-width="2.5"/>
+          <polygon points="50,8 71,29 50,50 29,29" fill="#DF2A26" stroke="#000" stroke-width="1.5" stroke-linejoin="round"/>
+          <polygon points="71,29 92,50 71,71 50,50" fill="#F4CD16" stroke="#000" stroke-width="1.5" stroke-linejoin="round"/>
+          <polygon points="29,29 50,50 29,71 8,50" fill="#0B75BA" stroke="#000" stroke-width="1.5" stroke-linejoin="round"/>
+          <polygon points="50,50 71,71 50,92 29,71" fill="#FFFFFF" stroke="#000" stroke-width="1.5" stroke-linejoin="round"/>
+          <text x="29" y="60" font-family="'Inter', sans-serif" font-weight="900" font-size="28" fill="#000" text-anchor="middle">1</text>
+          <text x="50" y="39" font-family="'Inter', sans-serif" font-weight="900" font-size="28" fill="#000" text-anchor="middle">4</text>
+          <text x="71" y="60" font-family="'Inter', sans-serif" font-weight="900" font-size="28" fill="#000" text-anchor="middle">0</text>
+          <path d="M50 54 C46 60 44 64 47 70 C49 73 53 73 53 70 C56 64 54 60 50 54 Z" fill="#000"/>
+          <path d="M47 62 C44 65 44 69 46 70 C47 68 47 65 47 62 Z" fill="#FFF"/>
+          <path d="M54 62 C56 65 56 69 54 70 C53 68 53 65 54 62 Z" fill="#FFF"/>
+          <rect x="42" y="73" width="16" height="1.5" fill="#000"/>
+          <text x="50" y="84" font-family="'Oswald', sans-serif" font-weight="700" font-size="12" letter-spacing="-0.5" fill="#000" text-anchor="middle">UN 1075</text>
+          <circle cx="50" cy="88.5" r="1.5" fill="#000"/>
         </svg>
-        <div style="font-family:'Oswald',sans-serif; font-size:12px; font-weight:700; color:#155220; letter-spacing:0.5px; border-bottom:2px solid #155220; line-height:1;">UN 1075</div>
       </div>
       <div class="prod-tag">Gas</div>
       <div class="prod-name">GLP</div>
@@ -331,23 +340,23 @@
     </div>
     <!-- JET FUEL -->
     <div class="prod prod-wide rv d3" style="position:relative;">
-      <div style="position:absolute; top:24px; right:24px; display:flex; flex-direction:column; align-items:center; gap:4px; opacity:0.95;">
-        <svg width="46" height="46" viewBox="0 0 100 100">
-          <polygon points="50,2 98,50 50,98 2,50" fill="#fff" stroke="#000" stroke-width="2"/>
-          <polygon points="50,2 50,50 2,50" fill="#005AA1"/>
-          <polygon points="50,2 98,50 50,50" fill="#E2231A"/>
-          <polygon points="50,50 98,50 50,98" fill="#FFC423"/>
-          <polygon points="2,50 50,50 50,98" fill="#FFFFFF"/>
-          <line x1="2" y1="50" x2="98" y2="50" stroke="#000" stroke-width="2"/>
-          <line x1="50" y1="2" x2="50" y2="98" stroke="#000" stroke-width="2"/>
-          <text x="26" y="60" font-family="'Inter', Arial" font-weight="800" font-size="32" fill="#FFF" text-anchor="middle">0</text>
-          <text x="50" y="36" font-family="'Inter', Arial" font-weight="800" font-size="32" fill="#FFF" text-anchor="middle">3</text>
-          <text x="74" y="60" font-family="'Inter', Arial" font-weight="800" font-size="32" fill="#000" text-anchor="middle">0</text>
-          <!-- Ícono simplificado de llama para el Jet Fuel -->
-          <path d="M50 63 C46 68 44 75 48 83 C50 87 53 87 55 83 C57 77 55 70 50 63 Z" fill="#000"/>
-          <path d="M50 72 C48 76 49 80 50 81 C51 81 52 79 50 72 Z" fill="#FFF"/>
+      <div style="position:absolute; top:20px; right:20px; opacity:0.98;">
+        <svg width="84" height="84" viewBox="0 0 100 100">
+          <polygon points="50,2 98,50 50,98 2,50" fill="#fff" stroke="#000" stroke-width="2.5"/>
+          <polygon points="50,8 71,29 50,50 29,29" fill="#DF2A26" stroke="#000" stroke-width="1.5" stroke-linejoin="round"/>
+          <polygon points="71,29 92,50 71,71 50,50" fill="#F4CD16" stroke="#000" stroke-width="1.5" stroke-linejoin="round"/>
+          <polygon points="29,29 50,50 29,71 8,50" fill="#0B75BA" stroke="#000" stroke-width="1.5" stroke-linejoin="round"/>
+          <polygon points="50,50 71,71 50,92 29,71" fill="#FFFFFF" stroke="#000" stroke-width="1.5" stroke-linejoin="round"/>
+          <text x="29" y="60" font-family="'Inter', sans-serif" font-weight="900" font-size="28" fill="#000" text-anchor="middle">0</text>
+          <text x="50" y="39" font-family="'Inter', sans-serif" font-weight="900" font-size="28" fill="#000" text-anchor="middle">3</text>
+          <text x="71" y="60" font-family="'Inter', sans-serif" font-weight="900" font-size="28" fill="#000" text-anchor="middle">0</text>
+          <path d="M50 54 C46 60 44 64 47 70 C49 73 53 73 53 70 C56 64 54 60 50 54 Z" fill="#000"/>
+          <path d="M47 62 C44 65 44 69 46 70 C47 68 47 65 47 62 Z" fill="#FFF"/>
+          <path d="M54 62 C56 65 56 69 54 70 C53 68 53 65 54 62 Z" fill="#FFF"/>
+          <rect x="42" y="73" width="16" height="1.5" fill="#000"/>
+          <text x="50" y="84" font-family="'Oswald', sans-serif" font-weight="700" font-size="12" letter-spacing="-0.5" fill="#000" text-anchor="middle">UN 1863</text>
+          <circle cx="50" cy="88.5" r="1.5" fill="#000"/>
         </svg>
-        <div style="font-family:'Oswald',sans-serif; font-size:12px; font-weight:700; color:#155220; letter-spacing:0.5px; border-bottom:2px solid #155220; line-height:1;">UN 1863</div>
       </div>
       <div class="prod-tag">Aviación</div>
       <div class="prod-name">Jet Fuel</div>
@@ -598,6 +607,6 @@
   </div>
 </footer>
 
-  <script type="module" src="/src/main.js"></script>
+  <script type="module" src="./src/main.js"></script>
 </body>
 </html>
