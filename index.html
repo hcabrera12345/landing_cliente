@@ -260,8 +260,23 @@
   <div class="rv"><div class="ew">Portafolio</div><h2>Línea de <em>Productos</em></h2></div>
   <div class="prod-grid">
 
-    <!-- DIESEL — nuevo contenido -->
-    <div class="prod rv">
+    <!-- DIESEL -->
+    <div class="prod rv" style="position:relative;">
+      <div style="position:absolute; top:24px; right:24px; display:flex; flex-direction:column; align-items:center; gap:4px; opacity:0.95;">
+        <svg width="46" height="46" viewBox="0 0 100 100">
+          <polygon points="50,2 98,50 50,98 2,50" fill="#fff" stroke="#000" stroke-width="2"/>
+          <polygon points="50,2 50,50 2,50" fill="#005AA1"/>
+          <polygon points="50,2 98,50 50,50" fill="#E2231A"/>
+          <polygon points="50,50 98,50 50,98" fill="#FFC423"/>
+          <polygon points="2,50 50,50 50,98" fill="#FFFFFF"/>
+          <line x1="2" y1="50" x2="98" y2="50" stroke="#000" stroke-width="2"/>
+          <line x1="50" y1="2" x2="50" y2="98" stroke="#000" stroke-width="2"/>
+          <text x="26" y="60" font-family="'Inter', Arial" font-weight="800" font-size="32" fill="#FFF" text-anchor="middle">1</text>
+          <text x="50" y="36" font-family="'Inter', Arial" font-weight="800" font-size="32" fill="#FFF" text-anchor="middle">2</text>
+          <text x="74" y="60" font-family="'Inter', Arial" font-weight="800" font-size="32" fill="#000" text-anchor="middle">0</text>
+        </svg>
+        <div style="font-family:'Oswald',sans-serif; font-size:12px; font-weight:700; color:#155220; letter-spacing:0.5px; border-bottom:2px solid #155220; line-height:1;">UN 1202</div>
+      </div>
       <div class="prod-tag">Combustible</div>
       <div class="prod-name">Diésel</div>
       <div class="prod-spec">EN590 · 10 ppm</div>
@@ -269,20 +284,71 @@
       <div class="prod-line"></div>
     </div>
 
-    <div class="prod rv d1">
+    <!-- GASOLINAS -->
+    <div class="prod rv d1" style="position:relative;">
+      <div style="position:absolute; top:24px; right:24px; display:flex; flex-direction:column; align-items:center; gap:4px; opacity:0.95;">
+        <svg width="46" height="46" viewBox="0 0 100 100">
+          <polygon points="50,2 98,50 50,98 2,50" fill="#fff" stroke="#000" stroke-width="2"/>
+          <polygon points="50,2 50,50 2,50" fill="#005AA1"/>
+          <polygon points="50,2 98,50 50,50" fill="#E2231A"/>
+          <polygon points="50,50 98,50 50,98" fill="#FFC423"/>
+          <polygon points="2,50 50,50 50,98" fill="#FFFFFF"/>
+          <line x1="2" y1="50" x2="98" y2="50" stroke="#000" stroke-width="2"/>
+          <line x1="50" y1="2" x2="50" y2="98" stroke="#000" stroke-width="2"/>
+          <text x="26" y="60" font-family="'Inter', Arial" font-weight="800" font-size="32" fill="#FFF" text-anchor="middle">1</text>
+          <text x="50" y="36" font-family="'Inter', Arial" font-weight="800" font-size="32" fill="#FFF" text-anchor="middle">3</text>
+          <text x="74" y="60" font-family="'Inter', Arial" font-weight="800" font-size="32" fill="#000" text-anchor="middle">0</text>
+        </svg>
+        <div style="font-family:'Oswald',sans-serif; font-size:12px; font-weight:700; color:#155220; letter-spacing:0.5px; border-bottom:2px solid #155220; line-height:1;">UN 1203</div>
+      </div>
       <div class="prod-tag">Combustible</div>
       <div class="prod-name">Gasolinas</div>
       <p class="prod-desc">Ron 87, Ron 90 y Ron 95+ para distribución en mercados con requerimientos diferenciados de rendimiento.</p>
       <div class="prod-line"></div>
     </div>
-    <div class="prod rv d2">
+    <!-- GLP -->
+    <div class="prod rv d2" style="position:relative;">
+      <div style="position:absolute; top:24px; right:24px; display:flex; flex-direction:column; align-items:center; gap:4px; opacity:0.95;">
+        <svg width="46" height="46" viewBox="0 0 100 100">
+          <polygon points="50,2 98,50 50,98 2,50" fill="#fff" stroke="#000" stroke-width="2"/>
+          <polygon points="50,2 50,50 2,50" fill="#005AA1"/>
+          <polygon points="50,2 98,50 50,50" fill="#E2231A"/>
+          <polygon points="50,50 98,50 50,98" fill="#FFC423"/>
+          <polygon points="2,50 50,50 50,98" fill="#FFFFFF"/>
+          <line x1="2" y1="50" x2="98" y2="50" stroke="#000" stroke-width="2"/>
+          <line x1="50" y1="2" x2="50" y2="98" stroke="#000" stroke-width="2"/>
+          <text x="26" y="60" font-family="'Inter', Arial" font-weight="800" font-size="32" fill="#FFF" text-anchor="middle">1</text>
+          <text x="50" y="36" font-family="'Inter', Arial" font-weight="800" font-size="32" fill="#FFF" text-anchor="middle">4</text>
+          <text x="74" y="60" font-family="'Inter', Arial" font-weight="800" font-size="32" fill="#000" text-anchor="middle">0</text>
+        </svg>
+        <div style="font-family:'Oswald',sans-serif; font-size:12px; font-weight:700; color:#155220; letter-spacing:0.5px; border-bottom:2px solid #155220; line-height:1;">UN 1075</div>
+      </div>
       <div class="prod-tag">Gas</div>
       <div class="prod-name">GLP</div>
       <div class="prod-spec">Gas Licuado de Petróleo</div>
       <p class="prod-desc">Suministro de gas licuado para uso doméstico, industrial y vehicular. Distribución segura con trazabilidad completa y cumplimiento de normativas técnicas nacionales.</p>
       <div class="prod-line"></div>
     </div>
-    <div class="prod prod-wide rv d3">
+    <!-- JET FUEL -->
+    <div class="prod prod-wide rv d3" style="position:relative;">
+      <div style="position:absolute; top:24px; right:24px; display:flex; flex-direction:column; align-items:center; gap:4px; opacity:0.95;">
+        <svg width="46" height="46" viewBox="0 0 100 100">
+          <polygon points="50,2 98,50 50,98 2,50" fill="#fff" stroke="#000" stroke-width="2"/>
+          <polygon points="50,2 50,50 2,50" fill="#005AA1"/>
+          <polygon points="50,2 98,50 50,50" fill="#E2231A"/>
+          <polygon points="50,50 98,50 50,98" fill="#FFC423"/>
+          <polygon points="2,50 50,50 50,98" fill="#FFFFFF"/>
+          <line x1="2" y1="50" x2="98" y2="50" stroke="#000" stroke-width="2"/>
+          <line x1="50" y1="2" x2="50" y2="98" stroke="#000" stroke-width="2"/>
+          <text x="26" y="60" font-family="'Inter', Arial" font-weight="800" font-size="32" fill="#FFF" text-anchor="middle">0</text>
+          <text x="50" y="36" font-family="'Inter', Arial" font-weight="800" font-size="32" fill="#FFF" text-anchor="middle">3</text>
+          <text x="74" y="60" font-family="'Inter', Arial" font-weight="800" font-size="32" fill="#000" text-anchor="middle">0</text>
+          <!-- Ícono simplificado de llama para el Jet Fuel -->
+          <path d="M50 63 C46 68 44 75 48 83 C50 87 53 87 55 83 C57 77 55 70 50 63 Z" fill="#000"/>
+          <path d="M50 72 C48 76 49 80 50 81 C51 81 52 79 50 72 Z" fill="#FFF"/>
+        </svg>
+        <div style="font-family:'Oswald',sans-serif; font-size:12px; font-weight:700; color:#155220; letter-spacing:0.5px; border-bottom:2px solid #155220; line-height:1;">UN 1863</div>
+      </div>
       <div class="prod-tag">Aviación</div>
       <div class="prod-name">Jet Fuel</div>
       <div class="prod-spec">Jet A-1 · ASTM D1655</div>
