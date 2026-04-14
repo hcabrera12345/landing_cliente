@@ -10,9 +10,9 @@ window.closeMob = closeMob;
 const trk=document.getElementById('crT'),dots=[...document.querySelectorAll('.dot')];
 const cP=document.getElementById('cP'),cN=document.getElementById('cN');
 const cDot=document.getElementById('cDot'),cTxt=document.getElementById('cTxt'),hC=document.getElementById('hC');
-const LT=[false,false,false,false,true];
-const caps=['Puerto costero andino — Tanquero en operación','Estación de Servicio YPFB · Bolivia','Planta de Almacenaje YPFB · Santa Cruz de la Sierra','Puerto Arica · Despacho de Cisternas','Operaciones Regionales — Foto 05'];
-let cur=0,tot=5,tmr;
+const LT=[false,false,false,false];
+const caps=['Puerto costero andino — Tanquero en operación','Estación de Servicio · Bolivia','Cisterna en Planta · Santa Cruz de la Sierra','Puerto Arica · Despacho de Cisternas'];
+let cur=0,tot=4,tmr;
 
 function goTo(i){
   cur=(i+tot)%tot;
